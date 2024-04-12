@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Dungeons and Diagrams : Play</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Dungeons & Diagrams</h1>
+        <a href="index.html">Home</a><br/>
+        <label for="level_select">Select level:</label>
+        <select name="level_select" id="level_select">
+            <optgroup label="Last Call BBS Levels">
+                <option value="1-1">1-1: Brightleaf Iron Mine</option>
+                <option value="1-2">1-2: The Secret Tunnels</option>
+                <option value="1-3">1-3: The Graveyard of
+                    the Vernal King</option>
+                <option value="1-4">1-4: The Shifting Walls</option>
+                <option value="1-5">1-5: The Fetid Sewers</option>
+                <option value="1-6">1-6: The Dais of the Sun God</option>
+                <option value="1-7">1-7: The Coronation of the Lich</option>
+                <option value="1-8">1-8: The Demon Marquis of Lust</option>
+                <option value="2-1">2-1: The Promenade</option>
+                <option value="2-2">2-2: The Bloodsoaked Den</option>
+                <option value="2-3">2-3: The False Maze of
+                    the Minotaur</option>
+                <option value="2-4">2-4: The Phylactery of
+                    the Lich</option>
+                <option value="2-5">2-5: The Trials of the
+                    Anointed One</option>
+                <option value="2-6">2-6: The Demon Court of
+                    Gluttony</option>
+                <option value="2-7">2-7: The Winding Warren</option>
+                <option value="2-8">2-8: The Gleaming Sky-Vaults</option>
+                <option value="3-1">3-1: The Corridor of Vise</option>
+                <option value="3-2">3-2: The Twin Cities of
+                    the Dead</option>
+                <option value="3-3">3-3: The Tainted Glade</option>
+                <option value="3-4">3-4: The Demon Duke of
+                    Avarice</option>
+                <option value="3-5">3-5: The Altar of
+                    Unknown Sacrifice</option>
+                <option value="3-6">3-6: Old Saulksburgh
+                    Gold Vaults</option>
+                <option value="3-7">3-7: The Illusory Hoard</option>
+                <option value="3-8">3-8: The Skittering Gallery</option>
+                <option value="4-1">4-1: The Thief's Dilemma</option>
+                <option value="4-2">4-2: The Chapel of the Undying
+                    Martyr</option>
+                <option value="4-3">4-3: The Hungering Caverns</option>
+                <option value="4-4">4-4: The Cosmic Orrery</option>
+                <option value="4-5">4-5: The House Penumbral</option>
+                <option value="4-6">4-6: The Demon Prince of
+                    Wrath</option>
+                <option value="4-7">4-7: Krog'mar's Last Stand</option>
+                <option value="4-8">4-8: The Catacombs of the
+                    Lich's Army</option>
+                <option value="5-1">5-1: Wardens of the Uncaged
+                    Chaos</option>
+                <option value="5-2">5-2: The Eye of the Minotaur</option>
+                <option value="5-3">5-3: The Corroded Corridors</option>
+                <option value="5-4">5-4: The Triumvirate of the
+                    Planar Keep</option>
+                <option value="5-5">5-5: The Halls of the
+                    Golemancer</option>
+                <option value="5-6">5-6: The Glacial Nest</option>
+                <option value="5-7">5-7: Fort Impenetrable</option>
+                <option value="5-8">5-8: The Artificer's Museum</option>
+                <option value="6-1">6-1: Beneath the Haunted Woods</option>
+                <option value="6-2">6-2: The Scoured Halls</option>
+                <option value="6-3">6-3: The Tomb of the Summer
+                    King</option>
+                <option value="6-4">6-4: The Living Reliquary</option>
+                <option value="6-5">6-5: The Twisting Descent</option>
+                <option value="6-6">6-6: The Edge of the Endless
+                    Swarm</option>
+                <option value="6-7">6-7: The Ascension of the
+                    Arch-Lich</option>
+                <option value="6-8">6-8: The Tomb of the Broken
+                    God</option>
+                <option value="7-1">7-1: The Ashen Remnant</option>
+                <option value="7-2">7-2: The Crypt of the
+                    Autumn King</option>
+                <option value="7-3">7-3: The Oblivion Hoard</option>
+                <option value="7-4">7-4: The Minotaur's Pursuit</option>
+                <option value="7-5">7-5: The Engine of the
+                    Golemancer</option>
+                <option value="7-6">7-6: The Hive of
+                    Great Sorrow</option>
+                <option value="7-7">7-7: Masters of the Astral
+                    Voyager</option>
+                <option value="7-8">7-8: The Barrow of the Winter
+                    King</option>
+                <option value="8-1">8-1: The Gardens of Hell</option>
+                <option value="8-2">8-2: The Demon King of
+                    Vainglory</option>
+                <option value="8-3">8-3: The Water Temple</option>
+                <option value="8-4">8-4: The Council of
+                    Unmaking</option>
+                <option value="8-5">8-5: Ickbog's Grave
+                    Mistake</option>
+                <option value="8-6">8-6: Tenaxxus's Gullet</option>
+                <option value="8-7">8-7: The Undertower of the
+                    Arch-Lich</option>
+                <option value="8-8">8-8: The True Maze of the
+                    Minotaur</option>
+            </optgroup>
+        </select>
+        <button onclick="startFromLevelSelect()">Start selected level</button>
+        <br/>
+        <label for="random_seed">Random seed:</label>
+        <input type="text" id="random_seed"></input>
+        <button onclick="startRandom()">Start random level</button>
+        <div id="game"></div>
+        Status: <span id="status" class="N/a">N/a</span>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/2.3.10/seedrandom.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
